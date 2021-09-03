@@ -11,5 +11,5 @@ describe('Renderizando elementos na tela', () => {
     expect(texto).toBeInTheDocument();
   });
 
-  it()
+  it.only()
 })

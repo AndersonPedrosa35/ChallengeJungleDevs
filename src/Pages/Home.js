@@ -2,7 +2,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <h1>Hello World</h1>
+    <h1>Easily create or join a local nanny share with Hapu</h1>
   )
 }
 
