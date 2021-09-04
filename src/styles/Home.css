@@ -1,0 +1,21 @@
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+
+}
+
+.title-hero {
+  color: white;
+  font-weight: 400;
+  font-size: 2.65rem;
+  margin: 13rem 0 0 5rem;
+  width: 36.5rem;
+  letter-spacing: -2px;
+}
+
+.paragraph-hero {
+  margin-left: 5rem;
+  color: white;
+  width: 35rem;
+}
