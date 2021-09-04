@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import '../styles/Home.css';
 
 function Home() {
+  useEffect(() => {
+    
+  }, [])
   return (
     <section className="hero">
       <Header />
