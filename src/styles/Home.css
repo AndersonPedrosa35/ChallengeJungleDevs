@@ -1,21 +1,59 @@
-.hero {
+.full-hero {
   height: 100vh;
   width: 100vw;
   background-color: blue;
+}
 
+.right-model {
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  margin: 6rem 8rem 2rem 0 ;
+  padding: 1rem 0 0 0;
+  width: 18rem;
+}
+
+.label {
+margin-top: 5px;
+}
+
+.input {
+  padding: 5px;
+  height: 15px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.right-model hr {
+  border: 0.5px solid black;
+  width: 70px;
+  margin: 4px 0 4px 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
 }
 
 .title-hero {
   color: white;
   font-weight: 400;
-  font-size: 2.65rem;
+  font-size: 2.50rem;
   margin: 13rem 0 0 5rem;
-  width: 36.5rem;
+  width: 34.5rem;
   letter-spacing: -2px;
 }
 
 .paragraph-hero {
   margin-left: 5rem;
   color: white;
-  width: 35rem;
+  width: 34rem;
 }

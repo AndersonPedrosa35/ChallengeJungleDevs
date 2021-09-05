@@ -1,13 +1,17 @@
 import { BrowserRouter } from 'react-router-dom';
+import Provider from './context/context';
 import Home from './Pages/Home';
 
 
 function App() {
   return (
+    
     <BrowserRouter>
-      <header>
-        <Home />
-      </header>
+      <Provider>
+        <header>
+          <Home />
+        </header>
+      </Provider>
     </BrowserRouter>
   );
 }
