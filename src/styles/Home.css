@@ -1,5 +1,5 @@
 .full-hero {
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   background-color: blue;
 }
@@ -10,10 +10,20 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  height: 20rem;
-  margin: 6rem 8rem 2rem 0 ;
+  height: 23.5rem;
+  margin: 5rem 8rem 2rem 0 ;
   padding: 1rem 0 0 0;
   width: 18rem;
+}
+
+.arrow {
+  margin-left: 32rem;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
 }
 
 .label {
