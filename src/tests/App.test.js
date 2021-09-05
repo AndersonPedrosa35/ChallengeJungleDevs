@@ -20,7 +20,29 @@ describe('Renderizando elementos do Hero na HomePage', () => {
     expect(link[2]).toHaveTextContent('Our Story');
   });
 
-  it('Verifica o model de Cadastro/login', () => {
-    
-  })
+  it('Verifica se renderiza a image no model de Cadastro/login', () => {
+    const { getByAltText } = render(<App />);
+
+    const img = getByAltText('Login');
+
+    expect(img).toBeInTheDocument();
+  });
+
+  it('Verifica os inputs de login do Model de Cadastro/Login', () => {
+    const { getAllByPlaceholderText } = render(<App />);
+
+    const inputs = getAllByPlaceholderText('E-mail');
+    expect(inputs[0].type).toBe('email');
+    expect(inputs[1].type).toBe('email');
+  });
+
+  it('Verifica os inputs de password do Model de Cadastro/Login', () => {
+    const { getAllByPlaceholderText } = render(<App />);
+
+    const inputs = getAllByPlaceholderText('Password');
+    expect(inputs[0].type).toBe('password');
+    expect(inputs[1].type).toBe('password');
+  });
+
+  it('')
 })
