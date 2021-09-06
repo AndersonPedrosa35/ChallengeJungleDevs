@@ -8,9 +8,7 @@ function App() {
     
     <BrowserRouter>
       <Provider>
-        <header>
-          <Home />
-        </header>
+        <Home />
       </Provider>
     </BrowserRouter>
   );

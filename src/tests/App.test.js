@@ -57,7 +57,7 @@ describe('Renderiza os elementos da seção de Demonstração da HomePage', () =
     expect(paragraph).toHaveTextContent('You have');
     expect(title).toHaveTextContent('Share your home');
   });
-  it('Verfica a imagem da seção de Descrição da HomePage', () => {
+  it('Verifica a imagem da seção de Descrição da HomePage', () => {
     const { getByAltText } = render(<App />);
 
     const img = getByAltText('funcionamento do Nani Share');

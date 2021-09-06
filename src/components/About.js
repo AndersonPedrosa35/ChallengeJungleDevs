@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Nani from '../assets/ImageSection1.svg';
 import '../styles/About.css';
 
@@ -18,6 +19,8 @@ export default function About() {
           to create new affordable solutions in childcare 
           that work for you and your community.
         </p>
+        <br />
+        <Link>Ready to get started?</Link>
       </section>
       <section className="container-img">
         <img src={ Nani } alt="funcionamento do Nani Share" />

@@ -13,6 +13,14 @@ export default function Home() {
         <p>Leave us your name and email and we’ll 
           update you as soon as a share becomes available in your area!</p>
       </section>
+      <form className="market-form">
+        <label htmlFor="">
+          <input />
+        </label>
+        <label>
+          <input />
+        </label>
+      </form>
     </div>
   )
 }

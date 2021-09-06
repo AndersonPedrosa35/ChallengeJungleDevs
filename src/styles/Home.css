@@ -95,6 +95,10 @@ margin-top: 5px;
   padding-top: 5rem;
 }
 
+.market p {
+  margin-top: 1rem;
+}
+
 .separator {
   width: 50rem;
   margin: 2rem 0 0 12rem;
