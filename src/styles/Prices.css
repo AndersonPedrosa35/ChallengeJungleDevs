@@ -1,0 +1,16 @@
+.prices {
+  display: flex;
+  padding: 3rem 3rem 3rem 6rem;
+}
+
+.options-prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20rem;
+}
+
+.description-prices {
+  margin-left: 3rem;
+  width: 30rem;
+}
