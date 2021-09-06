@@ -127,6 +127,8 @@ margin-top: 5px;
   align-items: center;
 }
 
+
+
 @media screen and (max-width: 23rem) {
   .hero {
     display: flex;
@@ -238,12 +240,6 @@ margin-top: 5px;
 
   .framework img {
     display: none;
-  }
-
-  footer .nav {
-    display:flex;
-    flex-wrap: nowrap;
-    color: black;
   }
 }
 
