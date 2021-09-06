@@ -127,7 +127,7 @@ margin-top: 5px;
   align-items: center;
 }
 
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 23rem) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -138,21 +138,61 @@ margin-top: 5px;
   }
   
   .left-model {
+    padding-bottom: 2rem;
     width: 100%;
   }
   
   .title-hero {
     font-size: 1.5rem;
     margin-left: 20px;
+    margin-bottom: 1rem;
     width: 80%;
     text-align: center;
   }
 
   .paragraph-hero {
     width: 80%;
-    margin-left: 30px;
+    margin-left: 2rem;
   }
 
-  
+  .right-model {
+    border-radius: 0px;
+    padding: 2rem 0 2rem 0;
+    width: 100%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13rem;
+  }
+
+  .container-text {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .container-img img {
+    width: 100%;
+  }
+
+  .separator {
+    width: 18rem;
+    margin-left: 2rem;
+  }
+
+  .market {
+    padding-left: 2rem;
+    width: 80%;
+  }
+
+  .market-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #market-email {
+    margin: 0.25rem 1rem 1rem 0;
+  }
 }
 

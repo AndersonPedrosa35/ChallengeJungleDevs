@@ -6,6 +6,9 @@ import '../styles/About.css';
 export default function About() {
   return (
     <section className="about">
+      <section className="container-img">
+        <img src={ Nani } alt="funcionamento do Nani Share" />
+      </section>
       <section className="container-text">
         <h1>Share your home, nanny and costs</h1>
         <p data-testid="paragraph">
@@ -21,9 +24,6 @@ export default function About() {
         </p>
         <br />
         <Link>Ready to get started?</Link>
-      </section>
-      <section className="container-img">
-        <img src={ Nani } alt="funcionamento do Nani Share" />
       </section>
     </section>
   )
