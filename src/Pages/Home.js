@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import Market from '../components/Market';
 import Prices from '../components/Prices';
 import App from '../assets/app.svg';
+import '../styles/Home.css';
 
 export default function Home() {
   return (

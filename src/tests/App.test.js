@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from '../App';
 
 
@@ -64,4 +65,43 @@ describe('Renderiza os elementos da seção de Demonstração da HomePage', () =
 
     expect(img).toBeInTheDocument();
   });
+});
+
+describe('Renderiza a calculadora de preços', () => {
+  it('Verifica os inputs da calculadora', () => {
+    const { getAllByTestId } = render(<App />);
+
+    const inputs = getAllByTestId('input-cal');
+    expect(inputs[0]).toBeInTheDocument();
+    expect(inputs[1]).toBeInTheDocument();
+  });
+
+  it('Aplica ação a calculadora', () => {
+    jest.fn
+    const { getAllByTestId, getByRole } = render(<App />);
+
+    const inputs = getAllByTestId('input-cal');
+    const button = getByRole('button', {
+      name: 'Calculate'
+    });
+
+    console.log(inputs);
+
+    userEvent.type(inputs[0], 2);
+    userEvent.type(inputs[1], 2);
+    userEvent.click(button);
+
+
+    const span = getByRole('listitem');
+
+    expect(span).toHaveTextContent(25);
+  });
+});
+
+describe('Renderiza a seção de demonstração do App', () => {
+  const { getByAltText } = render(<App />);
+
+  const img = getByAltText('framework');
+
+  expect(img).toBeInTheDocument();
 })

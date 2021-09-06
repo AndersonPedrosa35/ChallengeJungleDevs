@@ -30,6 +30,7 @@ export default function Prices() {
               type="number"
               className="input label"
               placeholder="How many children"
+              data-testid="input-cal"
               value={amountChild.child} 
               onChange={ ({ target }) => setAmountChild({...amountChild, child: target.value}) } 
             />
@@ -40,6 +41,7 @@ export default function Prices() {
               type="number"
               className="input label"
               placeholder="How much hours"
+              data-testid="input-cal"
               value={ amountChild.hours }
               onChange={ ({ target }) => setAmountChild({...amountChild, hours: target.value}) }
             />
@@ -47,16 +49,19 @@ export default function Prices() {
           <br />
           <button
             className="label"
-            type="submit" 
+            type="submit"
             onClick={ () => calculatePrice(amountChild.child, amountChild.hours) }
           >
             Calculate
           </button>
         </form>
-        <span className="label">
+        <span 
+          className="label"
+          role="listitem"
+          >
           The total price amount:
-        </span>
         { totalPrice ? `  ${totalPrice}` : `  0` }
+        </span>
       </section>
       <section className="description-prices">
         <h3>Shared payments made simple</h3>

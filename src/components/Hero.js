@@ -2,7 +2,6 @@ import React from 'react';
 import Login from '../assets/login.svg';
 import Arrow from '../assets/arrow.svg';
 import Header from './Header';
-import '../styles/Home.css';
 
 function Hero() {
   return (
