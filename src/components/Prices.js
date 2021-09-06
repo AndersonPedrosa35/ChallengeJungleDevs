@@ -9,9 +9,13 @@ export default function Prices() {
   const [totalPrice, setTotalPrice] = useState(0);
 
   function calculatePrice(child, hours) {
-    let sumDescount = child > 2 ? 0.75 : 1.25; 
-    let children = parseFloat(child) > 1 ? child * ((child * sumDescount) - 15) : 15;
-    setTotalPrice(Math.abs(children * parseFloat(hours)));
+    let numChild = parseFloat(child);
+    let sumDescount = numChild > 2 ? 1.66 : 1.25; 
+    if(numChild > 3) {
+      sumDescount = 1.55;
+    }
+    let children = numChild > 1 ? (numChild * sumDescount) - 15 : 15;
+    setTotalPrice(Math.round(Math.abs(children * parseFloat(hours))));
   }
 
   return (
