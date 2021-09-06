@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import About from '../components/About';
 import Framework from '../components/Framework';
 import Hero from '../components/Hero';
 import Market from '../components/Market';
 import Prices from '../components/Prices';
+import Footer from '../components/Footer';
 import App from '../assets/app.svg';
 import '../styles/Home.css';
 import '../styles/nav.css';
@@ -40,34 +40,7 @@ export default function Home() {
           <small>Takes less than 5 minutes</small>
         </button>
         <p>Or browse local nanny-shares</p>
-        <footer className="container-nav">
-          <nav className='nav'>
-            <Link 
-              className="link"
-              to="/create"
-              >
-                Share Your Nanny
-              </Link>
-            <Link
-              className="link"
-              to="/story"
-            >
-              Our story
-            </Link>
-            <Link
-              className="link"
-              to="/blog"
-            >
-              Blog
-            </Link>
-            <Link
-              className="link"
-              to="/terms"  
-            >
-              Terms & Privacy
-            </Link>
-          </nav>
-        </footer>
+        <Footer />
       </section>
     </div>
   )

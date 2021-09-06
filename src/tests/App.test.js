@@ -105,4 +105,4 @@ describe('Renderiza a seção de demonstração do App', () => {
 
     expect(img).toBeInTheDocument();
   });
-})
+});

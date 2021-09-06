@@ -47,6 +47,10 @@ button {
   color: white;
 }
 
+button:disabled {
+  opacity: 0.4;
+}
+
 .label {
 margin-top: 5px;
 }
