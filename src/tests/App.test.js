@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import renderWithRouter from './renderWithRouter';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
 import Prices from '../components/Prices';
@@ -7,7 +7,7 @@ jest.mock('../components/Prices');
 Prices.calculatePrice.mockResolvedValue(25);
 describe('Renderizando elementos do Hero na HomePage', () => {
   it('Verifica o texto no hero', () => {
-    const { getByText } = render(<App />);
+    const { getByText } = renderWithRouter(<App />);
     const texto = getByText(
       'Create the childcare you need at a price you can afford'
     );
@@ -15,7 +15,7 @@ describe('Renderizando elementos do Hero na HomePage', () => {
   });
 
   it('Verifica a barra header com os menu', () => {
-    const { getAllByRole } = render(<App />);
+    const { getAllByRole } = renderWithRouter(<App />);
 
     const link = getAllByRole('link');
     expect(link[0]).toHaveTextContent('Create Your Nanny Share');
@@ -24,7 +24,7 @@ describe('Renderizando elementos do Hero na HomePage', () => {
   });
 
   it('Verifica se renderiza a image no model de Cadastro/login', () => {
-    const { getByAltText } = render(<App />);
+    const { getByAltText } = renderWithRouter(<App />);
 
     const img = getByAltText('Login');
 
@@ -32,7 +32,7 @@ describe('Renderizando elementos do Hero na HomePage', () => {
   });
 
   it('Verifica os inputs de login do Model de Cadastro/Login', () => {
-    const { getAllByPlaceholderText } = render(<App />);
+    const { getAllByPlaceholderText } = renderWithRouter(<App />);
 
     const inputs = getAllByPlaceholderText('E-mail');
     expect(inputs[0].type).toBe('email');
@@ -40,7 +40,7 @@ describe('Renderizando elementos do Hero na HomePage', () => {
   });
 
   it('Verifica os inputs de password do Model de Cadastro/Login', () => {
-    const { getAllByPlaceholderText } = render(<App />);
+    const { getAllByPlaceholderText } = renderWithRouter(<App />);
 
     const inputs = getAllByPlaceholderText('Password');
     expect(inputs[0].type).toBe('password');
@@ -50,7 +50,7 @@ describe('Renderizando elementos do Hero na HomePage', () => {
 
 describe('Renderiza os elementos da seção de Demonstração da HomePage', () => {
   it('Verifica o texto sobre o produto', () => {
-    const { getByRole, getByTestId } = render(<App />);
+    const { getByRole, getByTestId } = renderWithRouter(<App />);
 
     const paragraph = getByTestId('paragraph');
     const title = getByRole('heading', {
@@ -61,7 +61,7 @@ describe('Renderiza os elementos da seção de Demonstração da HomePage', () =
     expect(title).toHaveTextContent('Share your home');
   });
   it('Verifica a imagem da seção de Descrição da HomePage', () => {
-    const { getByAltText } = render(<App />);
+    const { getByAltText } = renderWithRouter(<App />);
 
     const img = getByAltText('funcionamento do Nani Share');
 
@@ -71,7 +71,7 @@ describe('Renderiza os elementos da seção de Demonstração da HomePage', () =
 
 describe('Renderiza a calculadora de preços', () => {
   it('Verifica os inputs da calculadora', () => {
-    const { getAllByTestId } = render(<App />);
+    const { getAllByTestId } = renderWithRouter(<App />);
 
     const inputs = getAllByTestId('input-cal');
     expect(inputs[0]).toBeInTheDocument();
@@ -79,7 +79,7 @@ describe('Renderiza a calculadora de preços', () => {
   });
 
   it('Aplicação na calculadora', () => {
-    const { getAllByTestId, getByRole } = render(<App />);
+    const { getAllByTestId, getByRole } = renderWithRouter(<App />);
 
     const inputs = getAllByTestId('input-cal');
     const button = getByRole('button', {
@@ -99,7 +99,7 @@ describe('Renderiza a calculadora de preços', () => {
 
 describe('Renderiza a seção de demonstração do App', () => {
   it('Verifica a imagem',() => {
-    const { getByAltText } = render(<App />);
+    const { getByAltText } = renderWithRouter(<App />);
 
     const img = getByAltText('framework');
 

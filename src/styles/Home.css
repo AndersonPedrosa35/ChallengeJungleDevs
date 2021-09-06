@@ -133,8 +133,18 @@ margin-top: 5px;
     flex-direction: column;
   }
 
+  iframe {
+    display: none;
+  }
+
   header .nav {
     display: none;
+  }
+
+  .button-header {
+    display: inline;
+    color: white;
+    background-color: #00A870;
   }
   
   .left-model {
@@ -193,6 +203,47 @@ margin-top: 5px;
 
   #market-email {
     margin: 0.25rem 1rem 1rem 0;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .options-prices {
+    margin-left: -3rem;
+  }
+
+  .options-prices input {
+    margin-bottom: 0.5rem;
+  }
+
+  .options-prices button {
+    margin-left: 5rem;
+  }
+
+  .options-prices span {
+    margin: 1rem 0 2rem 1rem;
+  }
+
+  .description-prices {
+    width: 130%;
+    margin-left: -3.5rem;
+  }
+
+  .framework {
+    width: 80%;
+    margin-left: -2rem;
+  }
+
+  .framework img {
+    display: none;
+  }
+
+  footer .nav {
+    display:flex;
+    flex-wrap: nowrap;
+    color: black;
   }
 }
 
