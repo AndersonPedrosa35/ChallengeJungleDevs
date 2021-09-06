@@ -42,10 +42,30 @@ export default function Home() {
         <p>Or browse local nanny-shares</p>
         <footer className="container-nav">
           <nav className='nav'>
-            <Link className="link">Share Your Nanny</Link>
-            <Link className="link">Our story</Link>
-            <Link className="link">Blog</Link>
-            <Link className="link">Terms & Privacy</Link>
+            <Link 
+              className="link"
+              to="/create"
+              >
+                Share Your Nanny
+              </Link>
+            <Link
+              className="link"
+              to="/story"
+            >
+              Our story
+            </Link>
+            <Link
+              className="link"
+              to="/blog"
+            >
+              Blog
+            </Link>
+            <Link
+              className="link"
+              to="/terms"  
+            >
+              Terms & Privacy
+            </Link>
           </nav>
         </footer>
       </section>

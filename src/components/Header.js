@@ -5,9 +5,24 @@ function Header() {
   return (
     <header className="container-nav">
       <nav className="nav">
-        <Link className="link">Create Your Nanny Share</Link>
-        <Link className="link">Browse Shares</Link>
-        <Link className="link">Our Story</Link>
+        <Link
+          className="link"
+          to="/create"
+        >
+          Create Your Nanny Share
+        </Link>
+        <Link 
+          className="link"
+          to="/browse-shares"
+          >
+            Browse Shares
+          </Link>
+        <Link 
+          className="link"
+          to="/story"
+          >
+            Our Story
+          </Link>
       </nav>
     </header>
   )
