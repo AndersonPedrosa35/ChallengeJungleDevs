@@ -16,6 +16,7 @@ export default function Prices() {
     }
     let children = numChild > 1 ? (numChild * sumDescount) - 15 : 15;
     setTotalPrice(Math.round(Math.abs(children * parseFloat(hours))));
+    return Math.round(Math.abs(children * parseFloat(hours)));
   }
 
   return (

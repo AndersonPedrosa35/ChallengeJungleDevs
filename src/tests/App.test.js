@@ -1,8 +1,10 @@
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
+import Prices from '../components/Prices';
 
-
+jest.mock('../components/Prices');
+Prices.calculatePrice.mockResolvedValue(25);
 describe('Renderizando elementos do Hero na HomePage', () => {
   it('Verifica o texto no hero', () => {
     const { getByText } = render(<App />);
@@ -76,8 +78,7 @@ describe('Renderiza a calculadora de preços', () => {
     expect(inputs[1]).toBeInTheDocument();
   });
 
-  it('Aplica ação a calculadora', () => {
-    jest.fn
+  it('Aplicação na calculadora', () => {
     const { getAllByTestId, getByRole } = render(<App />);
 
     const inputs = getAllByTestId('input-cal');
@@ -85,23 +86,23 @@ describe('Renderiza a calculadora de preços', () => {
       name: 'Calculate'
     });
 
-    console.log(inputs);
-
     userEvent.type(inputs[0], 2);
     userEvent.type(inputs[1], 2);
     userEvent.click(button);
 
-
     const span = getByRole('listitem');
 
+    expect(Prices.calculatePrice).toBeCalled();
     expect(span).toHaveTextContent(25);
   });
 });
 
 describe('Renderiza a seção de demonstração do App', () => {
-  const { getByAltText } = render(<App />);
+  it('Verifica a imagem',() => {
+    const { getByAltText } = render(<App />);
 
-  const img = getByAltText('framework');
+    const img = getByAltText('framework');
 
-  expect(img).toBeInTheDocument();
+    expect(img).toBeInTheDocument();
+  });
 })

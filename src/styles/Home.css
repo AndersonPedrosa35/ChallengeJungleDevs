@@ -1,6 +1,6 @@
 .full-hero {
   height: 110vh;
-  width: 100vw;
+  width: 98.5vw;
   background-color: blue;
 }
 
@@ -109,4 +109,50 @@ margin-top: 5px;
   background-color: #F2F2F2;
 }
 
+.diary {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.diary h3 {
+  font-size: 2rem;
+  margin: 2rem 0 4rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 361px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .nav {
+    display: none;
+  }
+  
+  .left-model {
+    width: 100%;
+  }
+  
+  .title-hero {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .paragraph-hero {
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  
+}
 

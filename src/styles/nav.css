@@ -1,0 +1,43 @@
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+footer .link {
+  color: black;
+  margin-left: 2rem;
+}
+
+.footer {
+  background-color: white;
+  padding-top: 3rem;
+}
+
+.footer button {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.footer h3 {
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0.75rem 0 0.75rem 0;
+}
