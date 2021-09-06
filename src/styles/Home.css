@@ -101,8 +101,8 @@ margin-top: 5px;
 }
 
 .separator {
-  width: 50rem;
   margin: 2rem 0 0 12rem;
+  width: 50rem;
 }
 
 .home {
@@ -110,12 +110,37 @@ margin-top: 5px;
 }
 
 .market-form {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin: 3rem 1rem 5rem 0;
 }
 
 .market-form input {
   margin-right: 1rem;
+}
+
+.prices {
+  display: flex;
+  padding: 3rem 3rem 3rem 6rem;
+}
+
+.options-prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20rem;
+}
+
+.description-prices {
+  margin-left: 3rem;
+  width: 30rem;
+}
+
+.framework {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 0 2rem;
+  padding: 4rem;
 }
