@@ -39,8 +39,9 @@
 }
 
 button {
+  height: 1.8rem;
   padding: 5px;
-  background-color: blue;
+  background-color: #00A870;
   border-radius: 5px;
   border: none;
   color: white;
@@ -106,4 +107,15 @@ margin-top: 5px;
 
 .home {
   background-color: #F2F2F2;
+}
+
+.market-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 1rem 5rem 0;
+}
+
+.market-form input {
+  margin-right: 1rem;
 }
