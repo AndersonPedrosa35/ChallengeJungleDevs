@@ -43,6 +43,25 @@ describe('Renderizando elementos do Hero na HomePage', () => {
     expect(inputs[0].type).toBe('password');
     expect(inputs[1].type).toBe('password');
   });
+});
 
-  it('')
+describe('Renderiza os elementos da seção de Demonstração da HomePage', () => {
+  it('Verifica o texto sobre o produto', () => {
+    const { getByRole, getByTestId } = render(<App />);
+
+    const paragraph = getByTestId('paragraph');
+    const title = getByRole('heading', {
+      level: 1,
+    });
+
+    expect(paragraph).toHaveTextContent('You have');
+    expect(title).toHaveTextContent('Share your home');
+  });
+  it('Verfica a imagem da seção de Descrição da HomePage', () => {
+    const { getByAltText } = render(<App />);
+
+    const img = getByAltText('funcionamento do Nani Share');
+
+    expect(img).toBeInTheDocument();
+  });
 })

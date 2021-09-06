@@ -7,7 +7,7 @@ export default function About() {
     <section className="about">
       <section className="container-text">
         <h1>Share your home, nanny and costs</h1>
-        <p>
+        <p data-testid="paragraph">
           You have a fantastic home, a fantastic nanny and 
           wouldn’t cutting your costs in half be, well, fantastic?! 
           If only it was easy to connect with other parents 

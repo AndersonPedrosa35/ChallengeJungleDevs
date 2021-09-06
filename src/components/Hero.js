@@ -10,7 +10,7 @@ function Hero() {
       <Header />
       <section className="hero">
         <div className="left-model">
-          <h1 className='title-hero'>Create the childcare you need at a price you can afford</h1>
+          <h2 className='title-hero'>Create the childcare you need at a price you can afford</h2>
           <p className='paragraph-hero'>Connect with other local families to share a nanny from as low as $10.00/hr each. Create your family profile today to get started.</p>
         </div>
         <form className="right-model" onSubmit={(e) => e.preventDefault()}>
