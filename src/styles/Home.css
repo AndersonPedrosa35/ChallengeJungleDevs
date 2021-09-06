@@ -1,7 +1,11 @@
 .full-hero {
-  height: 120vh;
+  height: 110vh;
   width: 100vw;
   background-color: blue;
+}
+
+.left-model {
+  margin-top: -2rem;
 }
 
 .right-model {
@@ -11,19 +15,35 @@
   display: flex;
   flex-direction: column;
   height: 23.5rem;
-  margin: 5rem 8rem 2rem 0 ;
+  margin: 3.25rem 8rem 2rem 0 ;
   padding: 1rem 0 0 0;
   width: 18rem;
 }
 
 .arrow {
+  margin-top: -5rem;
   margin-left: 32rem;
+  width: 7.5rem;
+  border: none;
+  animation: go-back 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes go-back {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0)
+  }
 }
 
 button {
   padding: 5px;
+  background-color: blue;
   border-radius: 5px;
   border: none;
+  color: white;
 }
 
 .label {
@@ -32,7 +52,7 @@ margin-top: 5px;
 
 .input {
   padding: 5px;
-  height: 15px;
+  height: 1rem;
   background-color: white;
   border: 1px solid grey;
   border-radius: 5px;
@@ -44,7 +64,7 @@ margin-top: 5px;
 
 .right-model hr {
   border: 0.5px solid black;
-  width: 70px;
+  width: 4rem;
   margin: 4px 0 4px 0;
 }
 

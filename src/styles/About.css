@@ -1,0 +1,17 @@
+.about {
+  align-items: center;
+  background-color: #F2F2F2;
+  display: flex;
+  padding: 3rem;
+}
+
+.container-text {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.container-text h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+
+}
